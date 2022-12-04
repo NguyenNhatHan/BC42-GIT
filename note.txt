@@ -22,3 +22,17 @@
 -git checkout: chuyển sang một branch khác
  + git checkout branch-name: chuyển branch
  + git checkout -b branch-name: tạo branch
+
+- git pull: kéo tất cả commit mới nhất  của một branch từ remote repository về local repository
+
+- git merge: hợp nhất những commit ở một branch vào một branch khác
+ vd: branch hiện tại đang là featura-a, ta chạy lệch git merge master =>Hợp nhất những commite của branch master vào branch feature-a
+
+*Quy trình xử lý nếu bị conflict (feature-a tạo pull request vào master)
+ b1: checkout về branch master
+ b2: chạy lệnh git pull, để cập nhận những commit mới mất cho master ở local
+ b3: checkout về branch feature-a
+ b4: chạy git merge master, để hợp nhất nhưng commite của master vào feature-a
+ b5: resolve conflict ( thực hiện ở Vscode)
+ b6: git add, git commit, git push
+ b7: quay lại github để tạo pull request
