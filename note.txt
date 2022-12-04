@@ -6,3 +6,5 @@
 
 - git commit: xác nhận và lưu trữ các file đã thay đổi
  + git commit -m "message commit"
+
+- git log: xem lại lịch sử commit
