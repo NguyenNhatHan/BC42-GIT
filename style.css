@@ -1,0 +1,7 @@
+.title{
+    color: blue;
+}
+.content{
+    display: flex;
+    flex-flow: column;
+}
